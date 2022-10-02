@@ -53,3 +53,13 @@ https://www.technoy.de/lists/malware2.txt
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
 https://raw.githubusercontent.com/blocklistproject/Lists/master/malware.txt
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-periscope.txt
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-tumblr.txt
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-wechat.txt
+https://raw.githubusercontent.com/crpietschmann/pi-hole-blocklist/main/social-media/blocklist-social-whisper.txt
+https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt
+https://www.github.developerdan.com/hosts/lists/dating-services-extended.txt
+https://www.github.developerdan.com/hosts/lists/hate-and-junk-extended.txt
+https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt
+https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/crowed_list.txt
+https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
