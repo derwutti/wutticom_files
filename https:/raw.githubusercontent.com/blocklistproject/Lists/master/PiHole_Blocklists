@@ -1,3 +1,16 @@
+##############################################
+#                                            #
+#              AdLists für PiHole            #
+#                                            #
+##############################################
+
+## Diese Übersicht stellt eine Liste aller durch mich genutzten AdLists für PiHole dar.
+## Je nach genutztem Service müssen in den Whitelists noch einzelne Ausnahmen gesetzt werden.
+
+## Liste wird bei Bedarf aktualisiert.
+## Stand:                       02. Oktober 2022
+## Anzahl blockierter Domains:  11.562.366
+
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://adaway.org/hosts.txt
 https://v.firebog.net/hosts/AdguardDNS.txt
