@@ -1,0 +1,51 @@
+##############################################
+#                                            #
+#     Domains für Volkswagen We Connect      #
+#                                            #
+##############################################
+
+## Diese Übersicht stellt eine Liste aller für die Nutzung von Volkswagen We Connect notwendigen Domains dar.
+## Da PiHole und NextDNS diverse dieser Domains blocken, müssen diese für die Nutzung der App freigegeben werden.
+##
+## Keine Garantie, dass Volkswagen die Domains nicht ändert. Liste wird bei Bedarf aktualisiert.
+## Stand: 03. Oktober 2022
+
+
+
+##################################
+#        Server-Übersicht        #
+##################################
+
+tokenrefreshservice.apps.emea.vwapps.io
+consent.vwgroup.io
+mbboauth-1d.prd.ece.vwg-connect.com
+customer-profile.apps.emea.vwapps.io
+vum.apps.emea.vwapps.io
+profileintegrityservice.apps.emea.vwapps.io
+msg.volkswagen.de
+mal-1a.prd.ece.vwg-connect.com
+fal-3a.prd.eu.dp.vwg-connect.com
+mal-3a.prd.eu.dp.vwg-connect.com
+usermanagementservice.apps.emea.vwapps.io
+userinformationservice.apps.emea.vwapps.io
+dealer-api.apps.emea.vwapps.io
+media.volkswagen.com
+e2ed-sensor.apps.emea.vwapps.io
+shop.volkswagen-we.com
+autohmi-base.cubictelecom.com
+
+
+##################################
+#          Einfach Liste         #
+##################################
+
+## Da sich die Subdomains bei Volkswagen durchaus ändern können, im Folgenden eine Liste der Primärdomains.
+## Diese ist mit NextDNS getestet.
+
+vwapps.io
+vwgroup.io
+vwg-connect.com
+msg.volkswagen.de
+media.volkswagen.com
+shop.volkswagen-we.com
+autohmi-base.cubictelecom.com
