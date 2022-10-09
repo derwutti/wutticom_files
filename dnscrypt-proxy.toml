@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['odoh-cloudflare', 'dnscrypt-de-blahdns-ipv4', 'odoh-koki-ams']
+server_names = ['odoh-cloudflare']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -802,9 +802,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 ## in different countries, operated by different entities, on distinct ISPs...)
 
 routes = [
-   { server_name='odoh-cloudflare', via=['odohrelay-crypto-sx', 'odohrelay-surf'] },
-   { server_name='dnscrypt-de-blahdns-ipv4', via=['anon-pwoss.org', 'anon-cs-de', 'anon-cs-berlin', 'anon-cs-dus1', 'anon-cs-dus2', 'anon-cs-dus3', 'anon-cs-dus4'] },
-   { server_name='odoh-koki-ams', via=['odohrelay-crypto-sx', 'odohrelay-surf'] }
+   { server_name='odoh-cloudflare', via=['odohrelay-crypto-sx', 'odohrelay-surf'] }
     ]
 
 	
