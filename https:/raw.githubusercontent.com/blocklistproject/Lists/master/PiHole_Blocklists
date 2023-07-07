@@ -8,8 +8,8 @@
 ## Je nach genutztem Service müssen in den Whitelists noch einzelne Ausnahmen gesetzt werden.
 
 ## Liste wird bei Bedarf aktualisiert.
-## Stand:                       29. Januar 2023
-## Anzahl blockierter Domains:  11.562.366
+## Stand:                       07. Juli 2023
+## Anzahl blockierter Domains:  14.586.946
 
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://adaway.org/hosts.txt
@@ -121,3 +121,26 @@ https://raw.githubusercontent.com/TheBlockList/Blocklist/master/stuff
 https://raw.githubusercontent.com/TheBlockList/Blocklist/master/twitch
 https://raw.githubusercontent.com/wlqY8gkVb9w1Ck5MVD4lBre9nWJez8/W10TelemetryBlocklist/master/W10TelemetryBlocklist
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts
+https://raw.githubusercontent.com/badmojr/1Hosts/master/Xtra/domains.txt
+https://phishing.army/download/phishing_army_blocklist.txt
+https://blocklistproject.github.io/Lists/abuse.txt
+https://blocklistproject.github.io/Lists/ads.txt
+https://blocklistproject.github.io/Lists/crypto.txt
+https://blocklistproject.github.io/Lists/drugs.txt
+https://blocklistproject.github.io/Lists/everything.txt
+https://blocklistproject.github.io/Lists/fraud.txt
+https://blocklistproject.github.io/Lists/facebook.txt
+https://blocklistproject.github.io/Lists/gambling.txt
+https://blocklistproject.github.io/Lists/malware.txt
+https://blocklistproject.github.io/Lists/phishing.txt
+https://blocklistproject.github.io/Lists/piracy.txt
+https://blocklistproject.github.io/Lists/porn.txt
+https://blocklistproject.github.io/Lists/ransomware.txt
+https://blocklistproject.github.io/Lists/redirect.txt
+https://blocklistproject.github.io/Lists/scam.txt
+https://blocklistproject.github.io/Lists/tiktok.txt
+https://blocklistproject.github.io/Lists/torrent.txt
+https://blocklistproject.github.io/Lists/tracking.txt
+https://mapf.net/adlist/adlist_meta.txt
+https://mapf.net/adlist/adlist.txt
