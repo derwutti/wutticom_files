@@ -29,8 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['odoh-cloudflare']
-
+server_names = ['nextdns', 'nextdns-ipv6', 'dns.digitalsize.net']
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
 ## Example with both IPv4 and IPv6:
@@ -61,16 +60,16 @@ max_clients = 250
 ipv4_servers = true
 
 # Use servers reachable over IPv6 -- Do not enable if you don't have IPv6 connectivity
-ipv6_servers = false
+ipv6_servers = true
 
 # Use servers implementing the DNSCrypt protocol
-dnscrypt_servers = true
+dnscrypt_servers = false
 
 # Use servers implementing the DNS-over-HTTPS protocol
 doh_servers = true
 
 # Use servers implementing the Oblivious DoH protocol
-odoh_servers = true
+odoh_servers = false
 
 
 ## Require servers defined by remote sources to satisfy specific properties
@@ -101,7 +100,7 @@ force_tcp = false
 ## Note that, like DNSCrypt but unlike other HTTP versions, this uses
 ## UDP and (usually) port 443 instead of TCP.
 
-http3 = false
+http3 = true
 
 
 ## SOCKS proxy
@@ -161,7 +160,7 @@ lb_estimator = true
 
 ## Log level (0-6, default: 2 - 0 is very verbose, 6 only contains fatal errors)
 
-log_level = 2
+log_level = 6
 
 
 ## Log file for the application, as an alternative to sending logs to
@@ -170,7 +169,7 @@ log_level = 2
 ## This file is different from other log files, and will not be
 ## automatically rotated by the application.
 
-log_file = 'dnscrypt-proxy.log'
+log_file = '/home/Benutzer/dnscrypt-proxy.log'
 
 
 ## When using a log file, only keep logs from the most recent launch.
@@ -180,7 +179,7 @@ log_file = 'dnscrypt-proxy.log'
 
 ## Use the system logger (syslog on Unix, Event Log on Windows)
 
-# use_syslog = true
+# use_syslog = false
 
 
 ## Delay, in minutes, after which certificates are reloaded
@@ -248,7 +247,7 @@ cert_refresh_delay = 240
 ## not be sent there. If you're using DNSCrypt or Anonymized DNS and your
 ## lists are up to date, these resolvers will not even be used.
 
-bootstrap_resolvers = ['9.9.9.11:53', '1.1.1.1:53']
+bootstrap_resolvers = ['9.9.9.9:53', '84.200.69.80:53']
 
 
 ## Always use the bootstrap resolver before the system DNS settings.
@@ -317,6 +316,7 @@ log_files_max_backups = 1
 ## You can still choose resolvers that do DNSSEC validation.
 
 
+
 ## Immediately respond to IPv6-related queries with an empty response
 ## This makes things faster when there is no IPv6 connectivity, but can
 ## also cause reliability issues with some stub resolvers.
@@ -379,7 +379,7 @@ reject_ttl = 10
 
 ## Enable a DNS cache to reduce latency and outgoing traffic
 
-cache = true
+cache = false
 
 
 ## Cache size
@@ -464,7 +464,7 @@ cache_neg_max_ttl = 600
 ## Path to the query log file (absolute, or relative to the same directory as the config file)
 ## Can be set to /dev/stdout in order to log to the standard output.
 
-# file = 'dnscrypt-proxy-query.log'
+# file = '/home/ubuntu/dnsproxy-query.log'
 
 
 ## Query log format (currently supported: tsv and ltsv)
@@ -801,11 +801,18 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 ## select (relay,server) pairs that work well and fit your own criteria (close by or
 ## in different countries, operated by different entities, on distinct ISPs...)
 
-routes = [
-   { server_name='odoh-cloudflare', via=['odohrelay-crypto-sx', 'odohrelay-surf'] }
-    ]
+#routes = [
+#	{ server_name='dnscrypt-de-blahdns-ipv4', via=['anon-pwoss.org', 'anon-cs-de', 'anon-cs-berlin', 'anon-cs-dus1', 'anon-cs-dus2', 'anon-cs-dus3', 'anon-cs-dus4'] }
+#	]
 
-	
+#routes = [
+#         { server_name='odoh-cloudflare', via=['odohrelay-crypto-sx', 'odohrelay-surf'] },
+#         ]
+# routes = [
+#        { server_name='odoh-cloudflare', via=['odohrelay-crypto-sx', 'odohrelay-surf'] },
+#        { server_name='dns.watch', via=['anon-pwoss.org', 'anon-cs-de', 'anon-cs-berlin', 'anon-cs-dus1', 'anon-cs-dus2', 'anon-cs-dus3', 'anon-cs-dus4'] },
+#	]
+
 ## Skip resolvers incompatible with anonymization instead of using them directly
 
 skip_incompatible = true
